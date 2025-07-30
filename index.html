@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cyber 3D Scroll Experience</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="overlay">
+    <h1>Cyber Scroll Experience</h1>
+    <p>Scroll down to explore the 3D object</p>
+  </div>
+
+  <div class="scroll-container">
+    <section class="spacer"></section>
+
+    <section class="canvas-wrapper">
+      <canvas id="webgl"></canvas>
+    </section>
+
+    <section class="content-section">
+      <h2>Immersive 3D Control</h2>
+      <p>Scroll controls the animation of the model, providing a rich cyber experience.</p>
+    </section>
+
+    <section class="content-section">
+      <h2>Fully Responsive</h2>
+      <p>This interface adapts seamlessly to any device, ensuring fluid interaction.</p>
+    </section>
+
+    <section class="content-section">
+      <h2>Built with Love</h2>
+      <p>Inspired by nk.studio, recreated in pure HTML, CSS, and JavaScript.</p>
+    </section>
+
+    <section class="spacer"></section>
+  </div>
+
+  <!-- GSAP & ScrollTrigger -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+  <!-- Main logic -->
+  <script type="module" src="main.js"></script>
+</body>
+</html>
